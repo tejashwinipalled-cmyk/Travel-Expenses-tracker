@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<body>
+    <form name="form1" method="post">
+        {% csrf_token %}
+        trip=<input type="text" name="user"><br>
+        name=<input type="text" name="name"><br>
+        phone=<input type="number" name="phone"><br>
+        email=<input type="text" name="email"><br>
+
+       <input type="submit" value="Submit">
+
+    </form>
+{% endblock %}

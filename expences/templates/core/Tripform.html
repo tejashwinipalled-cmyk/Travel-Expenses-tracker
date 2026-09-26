@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<body>
+    <form name="form1" method="post">
+        {% csrf_token %}
+        user: <input type="text" name="user"><br>
+        trip_name: <input type="text" name="trip_name"><br>
+        destination: <input type="text" name="destination"><br>
+        start_date: <input type="date" name="start_date"><br>
+        end_date: <input type="date" name="end_date"><br>
+        budget: <input type="number" name="budget"><br>
+        Status: <input type="text" name="status"><br>
+        <input type="submit" value="Submit">
+
+
+    </form>
+{% endblock %}
+

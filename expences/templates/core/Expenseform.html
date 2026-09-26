@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<body>
+    <form name="form1" method="post">
+        {% csrf_token %}
+        trip=<input type="text" name="user"><br>
+        category=<input type="text" name="category"><br>
+        amount=<input type="number" name="amount"><br>
+        descripition=<input type="text" name="descripition"><br>
+        expense_date=<input type="date" name="expense_date"><br>
+        payment_method=<input type="number" name="payment_method"><br>
+        receipt=<input type="text" name="receipt"><br>
+        created_at=<input type="datetime" name="created_at"
+
+
+    </form>
+    {% endblock %}
+
